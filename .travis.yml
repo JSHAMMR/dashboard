@@ -6,7 +6,13 @@ before_install:
 - gem install cocoapods
 - gem update concurrent-ruby
 - pod setup
+- pod install
 # - pod install --project-directory=Example
+
+cache:
+  directories:
+  - $HOME/.m2  
+  
 script:
 - set -o pipefail && xcodebuild clean build -workspace Dashborad.xcworkspace -scheme "Dashborad_CI" -sdk iphonesimulator -destination "platform=iOS Simulator,OS=13.3,name=iPhone 8" ONLY_ACTIVE_ARCH=NO CORE_SIGNING_REQUIRED=NO | xcpretty
 - pod lib lint
