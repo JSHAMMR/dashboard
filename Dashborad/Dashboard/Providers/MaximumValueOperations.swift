@@ -77,7 +77,7 @@ class MaximumValueOperations {
                 print(self.constraint(n: n, m: m, queries: queries))
                 
                 if self.constraint(n: n, m: m, queries: queries) {
-                    self.arrayManipulation(n: n, m: m, queries: queries)
+                    print("Maximum value after \(m) operations is : \(self.arrayManipulation(n: n, m: m, queries: queries))")
 
                 }
 
@@ -91,10 +91,45 @@ class MaximumValueOperations {
 
     func arrayManipulation(n: Int, m: Int, queries: [[Int]]) -> Int {
         
+        let zeroCount  = n + 1
+        var zeroArray = [Int](repeating: 0, count: zeroCount)
         
+        // Start performing 'm' operations
         
+        let a = queries[0]
+        let b = queries[1]
+        let  k = queries[2]
+
+
+        for i in 0...m-1 {
+            let lowerbound = a[i]
+            let upperbound = b[i]
+            
+            // Add k to the lower_bound
+            zeroArray[lowerbound] += k[i]
+
+            // Reduce upper_bound+1
+            // indexed value by k
+            if upperbound < zeroArray.count - 1 {
+                zeroArray[upperbound + 1] -= k[i]
+
+            }
+            
+        }
+
+        // Find maximum sum
+        // possible from all values
+        var sum = 0
+        var res = UInt8.min
+        for i in 0...n {
+            sum += zeroArray[i]
+
+            res = max(res, UInt8(sum));
+
+        }
+       
+        return Int(res)
         
-        return 0
     }
     
     
