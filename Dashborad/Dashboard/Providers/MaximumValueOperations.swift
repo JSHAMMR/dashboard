@@ -10,15 +10,22 @@ import UIKit
 
 class MaximumValueOperations {
     
-    var n:Int!
-    var m:Int!
-    var a = [Int]()
-    var b = [Int]()
-    var k = [Int]()
+   
 
     var queries = [[Int]]()
     
+    
+    
+    
     init() {
+        
+        var n:Int!
+        var m:Int!
+        var a = [Int]()
+        var b = [Int]()
+        var k = [Int]()
+        
+        
         let input = "5 3\n1 2 100\n2 5 100\n3 4 100"
         let arrayByRows = input.components(separatedBy: "\n")
         if arrayByRows.count > 0 {
@@ -67,7 +74,12 @@ class MaximumValueOperations {
                 queries.append(b)
                 queries.append(k)
 
+                print(self.constraint(n: n, m: m, queries: queries))
                 
+                if self.constraint(n: n, m: m, queries: queries) {
+                    self.arrayManipulation(n: n, m: m, queries: queries)
+
+                }
 
             } catch let error {
                 print(error)
@@ -79,7 +91,33 @@ class MaximumValueOperations {
 
     func arrayManipulation(n: Int, m: Int, queries: [[Int]]) -> Int {
         
+        
+        
+        
         return 0
+    }
+    
+    
+    func constraint (n: Int, m: Int, queries: [[Int]]) -> Bool {
+        var check = true
+        
+        if n < 3 || n > 10000000 {
+            return false
+        }
+        if m < 1 || n > 200000 {
+            return false
+        }
+        
+        if queries[0].count < 1 || queries[0].count > queries[1].count ||  queries[1].count > n{
+            return false
+        }
+        
+        if queries[2].count < 0 || n > 1000000000 {
+            return false
+        }
+        
+        
+        return check
     }
     
 }
