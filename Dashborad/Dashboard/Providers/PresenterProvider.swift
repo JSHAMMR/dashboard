@@ -9,7 +9,15 @@
 import UIKit
 
 class PresenterProvider: NSObject, DashboardListPresenterDelegate {
+    
+    
+    var dashboardListPresenter: DashboardListPresenter?
+    var scrollView: UIScrollView!
+
     func didFetchDashboardItems(success: Bool) {
+        
+        
+        print(dashboardListPresenter)
         
     }
     

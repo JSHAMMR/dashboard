@@ -19,7 +19,12 @@ class DashboardViewController: UIViewController {
         self.dashboardListPresenter = self.dashboardPresenter()
         self.dashboardListPresenter?.fetchDashboardItems()
 
+        self.presnterProvider.dashboardListPresenter = self.dashboardListPresenter
+        self.presnterProvider.scrollView = self.scrollView
         
+        
+        self.dashboardListPresenter?.delegate = self.presnterProvider
+
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
