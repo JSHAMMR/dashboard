@@ -37,6 +37,10 @@ class DashboardViewController: UIViewController {
 
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        
+        // challenge 2
+        let maximumu = MaximumValueOperations()
     }
 
 
