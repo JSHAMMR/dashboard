@@ -36,6 +36,8 @@
 		DC14F01623DC0ECF002F0F7A /* LineChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC14F01523DC0ECF002F0F7A /* LineChartView.xib */; };
 		DC14F01923DC1E98002F0F7A /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14F01823DC1E98002F0F7A /* PieChartView.swift */; };
 		DC14F01B23DC1EA0002F0F7A /* PieChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC14F01A23DC1EA0002F0F7A /* PieChartView.xib */; };
+		DC14F01E23DC244A002F0F7A /* ServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14F01D23DC244A002F0F7A /* ServicesView.swift */; };
+		DC14F02023DC2458002F0F7A /* ServicesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC14F01F23DC2458002F0F7A /* ServicesView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +99,8 @@
 		DC14F01523DC0ECF002F0F7A /* LineChartView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LineChartView.xib; sourceTree = "<group>"; };
 		DC14F01823DC1E98002F0F7A /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 		DC14F01A23DC1EA0002F0F7A /* PieChartView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PieChartView.xib; sourceTree = "<group>"; };
+		DC14F01D23DC244A002F0F7A /* ServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesView.swift; sourceTree = "<group>"; };
+		DC14F01F23DC2458002F0F7A /* ServicesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServicesView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +279,7 @@
 		DC14EFFA23DBF75F002F0F7A /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
+				DC14F01C23DC2434002F0F7A /* Services */,
 				DC14F01723DC1E7B002F0F7A /* PieChart */,
 				DC14F01223DC0E8A002F0F7A /* LineChart */,
 				DC14F00A23DC06EC002F0F7A /* Jobs */,
@@ -343,6 +348,15 @@
 				DC14F01A23DC1EA0002F0F7A /* PieChartView.xib */,
 			);
 			name = PieChart;
+			sourceTree = "<group>";
+		};
+		DC14F01C23DC2434002F0F7A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DC14F01D23DC244A002F0F7A /* ServicesView.swift */,
+				DC14F01F23DC2458002F0F7A /* ServicesView.xib */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		DE1179C6D51330AA09FBD31E /* Pods */ = {
@@ -473,6 +487,7 @@
 				DC14F01623DC0ECF002F0F7A /* LineChartView.xib in Resources */,
 				DC14F01B23DC1EA0002F0F7A /* PieChartView.xib in Resources */,
 				DC14EFBF23DBE3C0002F0F7A /* Assets.xcassets in Resources */,
+				DC14F02023DC2458002F0F7A /* ServicesView.xib in Resources */,
 				DC14EFBD23DBE3BD002F0F7A /* Main.storyboard in Resources */,
 				DC14EFFF23DBF7F4002F0F7A /* RatingView.xib in Resources */,
 			);
@@ -611,6 +626,7 @@
 				DC14EFEC23DBEE99002F0F7A /* Network.swift in Sources */,
 				DC14F00223DBFAD9002F0F7A /* PresenterProvider.swift in Sources */,
 				DC14F01923DC1E98002F0F7A /* PieChartView.swift in Sources */,
+				DC14F01E23DC244A002F0F7A /* ServicesView.swift in Sources */,
 				DC14EFB623DBE3BD002F0F7A /* AppDelegate.swift in Sources */,
 				DC14F00C23DC070E002F0F7A /* JobsView.swift in Sources */,
 				DC14F01123DC0A12002F0F7A /* UIView.swift in Sources */,
