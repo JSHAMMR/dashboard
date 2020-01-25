@@ -29,11 +29,13 @@
                         <outlet property="jobProvider" destination="pyq-eN-GOe" id="Dpf-pd-jkq"/>
                         <outlet property="presnterProvider" destination="eg1-GG-7l6" id="bVf-XY-TXd"/>
                         <outlet property="scrollView" destination="9qO-MD-9DY" id="Ceb-Cx-USa"/>
+                        <outlet property="servicesProvider" destination="QPr-SN-n3B" id="Emb-Tx-jLY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <customObject id="eg1-GG-7l6" customClass="PresenterProvider" customModule="Dashborad" customModuleProvider="target"/>
                 <customObject id="pyq-eN-GOe" customClass="JobsProvider" customModule="Dashborad" customModuleProvider="target"/>
+                <customObject id="QPr-SN-n3B" customClass="ServicesProvider" customModule="Dashborad" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="128.57142857142856"/>
         </scene>

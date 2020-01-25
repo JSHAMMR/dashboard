@@ -14,6 +14,7 @@ class DashboardViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet var presnterProvider: PresenterProvider!
     @IBOutlet var jobProvider: JobsProvider!
+    @IBOutlet var servicesProvider: ServicesProvider!
 
     override func viewDidLoad() {
         
@@ -24,6 +25,7 @@ class DashboardViewController: UIViewController {
         self.presnterProvider.scrollView = self.scrollView
         
         self.presnterProvider.jobProvider = self.jobProvider
+        self.presnterProvider.servicesProvider = self.servicesProvider
 
         self.dashboardListPresenter?.delegate = self.presnterProvider
 

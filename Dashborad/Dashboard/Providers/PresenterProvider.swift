@@ -17,6 +17,7 @@ class PresenterProvider: NSObject, DashboardListPresenterDelegate {
     private var heightContent:CGFloat = 0
     
     var jobProvider:JobsProvider!
+    var servicesProvider:ServicesProvider!
 
 
     func didFetchDashboardItems(success: Bool) {
