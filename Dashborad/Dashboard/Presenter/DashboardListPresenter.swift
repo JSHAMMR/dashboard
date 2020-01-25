@@ -69,6 +69,15 @@ class DashboardListPresenter: NSObject {
         return self.getJobs()[index]
     }
     
+    
+     public func getLineCharts () -> [[LineChart]]{
+         guard let lineCharts = dashboardModel.response?.data?.analytics?.lineCharts else {
+                   return [[LineChart]]()
+             }
+                
+         return lineCharts
+     }
+    
 }
 
 extension DashboardListPresenter : DashboardListModelDelegate {
