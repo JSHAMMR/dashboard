@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -32,6 +32,8 @@
 		DC14F00C23DC070E002F0F7A /* JobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14F00B23DC070E002F0F7A /* JobsView.swift */; };
 		DC14F00E23DC0716002F0F7A /* JobsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC14F00D23DC0716002F0F7A /* JobsView.xib */; };
 		DC14F01123DC0A12002F0F7A /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14F01023DC0A12002F0F7A /* UIView.swift */; };
+		DC14F01423DC0EA0002F0F7A /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14F01323DC0EA0002F0F7A /* LineChartView.swift */; };
+		DC14F01623DC0ECF002F0F7A /* LineChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC14F01523DC0ECF002F0F7A /* LineChartView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		DC14F00B23DC070E002F0F7A /* JobsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsView.swift; sourceTree = "<group>"; };
 		DC14F00D23DC0716002F0F7A /* JobsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobsView.xib; sourceTree = "<group>"; };
 		DC14F01023DC0A12002F0F7A /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		DC14F01323DC0EA0002F0F7A /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
+		DC14F01523DC0ECF002F0F7A /* LineChartView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LineChartView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,6 +271,7 @@
 		DC14EFFA23DBF75F002F0F7A /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
+				DC14F01223DC0E8A002F0F7A /* LineChart */,
 				DC14F00A23DC06EC002F0F7A /* Jobs */,
 				DC14EFFB23DBF773002F0F7A /* Rating */,
 			);
@@ -315,6 +320,15 @@
 				DC14F01023DC0A12002F0F7A /* UIView.swift */,
 			);
 			path = Extenstion;
+			sourceTree = "<group>";
+		};
+		DC14F01223DC0E8A002F0F7A /* LineChart */ = {
+			isa = PBXGroup;
+			children = (
+				DC14F01323DC0EA0002F0F7A /* LineChartView.swift */,
+				DC14F01523DC0ECF002F0F7A /* LineChartView.xib */,
+			);
+			name = LineChart;
 			sourceTree = "<group>";
 		};
 		DE1179C6D51330AA09FBD31E /* Pods */ = {
@@ -442,6 +456,7 @@
 				DC14EFC223DBE3C0002F0F7A /* LaunchScreen.storyboard in Resources */,
 				DC14F00923DC02E3002F0F7A /* TableViewCell.xib in Resources */,
 				DC14F00E23DC0716002F0F7A /* JobsView.xib in Resources */,
+				DC14F01623DC0ECF002F0F7A /* LineChartView.xib in Resources */,
 				DC14EFBF23DBE3C0002F0F7A /* Assets.xcassets in Resources */,
 				DC14EFBD23DBE3BD002F0F7A /* Main.storyboard in Resources */,
 				DC14EFFF23DBF7F4002F0F7A /* RatingView.xib in Resources */,
@@ -583,6 +598,7 @@
 				DC14EFB623DBE3BD002F0F7A /* AppDelegate.swift in Sources */,
 				DC14F00C23DC070E002F0F7A /* JobsView.swift in Sources */,
 				DC14F01123DC0A12002F0F7A /* UIView.swift in Sources */,
+				DC14F01423DC0EA0002F0F7A /* LineChartView.swift in Sources */,
 				DC14F00823DC02E3002F0F7A /* TableViewCell.swift in Sources */,
 				DC14F00423DC0100002F0F7A /* JobsProvider.swift in Sources */,
 				DC14EFF423DBF019002F0F7A /* DashboardParser.swift in Sources */,
