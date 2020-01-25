@@ -85,6 +85,15 @@ class DashboardListPresenter: NSObject {
                   
            return pieCharts
        }
+    
+    
+    public func servicesCount() -> Int {
+           
+        guard let count = dashboardModel.response?.data?.analytics?.service?.items!.count else {
+               return 0
+           }
+           return count
+    }
        
     
 }
