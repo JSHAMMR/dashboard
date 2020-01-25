@@ -28,6 +28,8 @@ class PresenterProvider: NSObject, DashboardListPresenterDelegate {
             
             self.addLineChartView ()
             
+            self.addPieChartView ()
+            
         }
     }
     
@@ -108,6 +110,23 @@ class PresenterProvider: NSObject, DashboardListPresenterDelegate {
        
        
            }
+    
+    func addPieChartView () {
+                 
+              self.dashboardListPresenter?.getPieCharts().forEach({ (pieChart) in
+              let pieChartView = (PieChartView.instanceFromNib() as! PieChartView)
+              pieChartView.frame =  CGRect(x: 0, y:heightContent, width:  screenSize.width, height: pieChartView.frame.height)
+
+              scrollView.addSubview(pieChartView)
+              heightContent = heightContent + pieChartView.frame.height
+
+              scrollView.contentSize = CGSize(width:  screenSize.width, height: heightContent)
+
+              pieChartView.updateUI(valueElements: pieChart.items!, desc: pieChart.pieChartDescription!)
+              })
+         
+         
+             }
     
 
 }
