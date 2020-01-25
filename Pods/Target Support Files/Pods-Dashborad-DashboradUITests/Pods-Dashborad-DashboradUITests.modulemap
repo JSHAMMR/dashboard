@@ -1,0 +1,6 @@
+framework module Pods_Dashborad_DashboradUITests {
+  umbrella header "Pods-Dashborad-DashboradUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
