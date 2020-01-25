@@ -41,6 +41,18 @@ class DashboardListPresenter: NSObject {
         }
         return description
     }
+    
+    
+    public func jobsCount() -> Int {
+        
+        guard let count = dashboardModel.response?.data?.analytics?.job?.items!.count else {
+            return 0
+        }
+        return count
+    }
+    
+    
+    
 }
 
 extension DashboardListPresenter : DashboardListModelDelegate {
