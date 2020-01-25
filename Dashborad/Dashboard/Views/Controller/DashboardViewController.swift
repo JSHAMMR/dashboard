@@ -13,6 +13,7 @@ class DashboardViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet var presnterProvider: PresenterProvider!
+    @IBOutlet var jobProvider: JobsProvider!
 
     override func viewDidLoad() {
         
