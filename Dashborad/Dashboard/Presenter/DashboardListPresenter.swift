@@ -22,6 +22,10 @@ class DashboardListPresenter: NSObject {
            super.init()
            self.dashboardViewModel.delegate = self
        }
+    
+    public func fetchDashboardItems (scope:String = "ALL") {
+        self.dashboardViewModel.fetchDashboardItems(scope: scope)
+    }
 
 }
 
