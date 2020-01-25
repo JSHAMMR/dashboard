@@ -18,6 +18,8 @@
 		DC14EFCD23DBE3C0002F0F7A /* DashboradTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14EFCC23DBE3C0002F0F7A /* DashboradTests.swift */; };
 		DC14EFD823DBE3C0002F0F7A /* DashboradUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14EFD723DBE3C0002F0F7A /* DashboradUITests.swift */; };
 		DC14EFE923DBEBC1002F0F7A /* DashboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14EFE823DBEBC1002F0F7A /* DashboardModel.swift */; };
+		DC14EFEC23DBEE99002F0F7A /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14EFEB23DBEE99002F0F7A /* Network.swift */; };
+		DC14EFEF23DBEEE2002F0F7A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14EFEE23DBEEE2002F0F7A /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		DC14EFD723DBE3C0002F0F7A /* DashboradUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboradUITests.swift; sourceTree = "<group>"; };
 		DC14EFD923DBE3C0002F0F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC14EFE823DBEBC1002F0F7A /* DashboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardModel.swift; sourceTree = "<group>"; };
+		DC14EFEB23DBEE99002F0F7A /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		DC14EFEE23DBEEE2002F0F7A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,9 +130,9 @@
 		DC14EFB423DBE3BD002F0F7A /* Dashborad */ = {
 			isa = PBXGroup;
 			children = (
+				DC14EFB523DBE3BD002F0F7A /* AppDelegate.swift */,
 				DC14EFE623DBEB7B002F0F7A /* Utils */,
 				DC14EFE523DBEB1D002F0F7A /* Dashboard */,
-				DC14EFB523DBE3BD002F0F7A /* AppDelegate.swift */,
 				DC14EFB923DBE3BD002F0F7A /* ViewController.swift */,
 				DC14EFBB23DBE3BD002F0F7A /* Main.storyboard */,
 				DC14EFBE23DBE3C0002F0F7A /* Assets.xcassets */,
@@ -159,6 +163,7 @@
 		DC14EFE523DBEB1D002F0F7A /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				DC14EFEA23DBEE75002F0F7A /* Network */,
 				DC14EFE723DBEBA6002F0F7A /* Models */,
 			);
 			path = Dashboard;
@@ -167,6 +172,7 @@
 		DC14EFE623DBEB7B002F0F7A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				DC14EFED23DBEED4002F0F7A /* Constants */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -177,6 +183,22 @@
 				DC14EFE823DBEBC1002F0F7A /* DashboardModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		DC14EFEA23DBEE75002F0F7A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DC14EFEB23DBEE99002F0F7A /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DC14EFED23DBEED4002F0F7A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DC14EFEE23DBEEE2002F0F7A /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		DE1179C6D51330AA09FBD31E /* Pods */ = {
@@ -395,8 +417,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC14EFEF23DBEEE2002F0F7A /* Constants.swift in Sources */,
 				DC14EFBA23DBE3BD002F0F7A /* ViewController.swift in Sources */,
 				DC14EFE923DBEBC1002F0F7A /* DashboardModel.swift in Sources */,
+				DC14EFEC23DBEE99002F0F7A /* Network.swift in Sources */,
 				DC14EFB623DBE3BD002F0F7A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
