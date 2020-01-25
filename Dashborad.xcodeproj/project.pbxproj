@@ -11,7 +11,7 @@
 		4D0E79E371403C3F6A27374D /* Pods_DashboradTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35649276FC42DF16C6367D1A /* Pods_DashboradTests.framework */; };
 		AEBFCDFDB1F7466435CA92A8 /* Pods_Dashborad_DashboradUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90FC66EB036741D446DA6689 /* Pods_Dashborad_DashboradUITests.framework */; };
 		DC14EFB623DBE3BD002F0F7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14EFB523DBE3BD002F0F7A /* AppDelegate.swift */; };
-		DC14EFBA23DBE3BD002F0F7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14EFB923DBE3BD002F0F7A /* ViewController.swift */; };
+		DC14EFBA23DBE3BD002F0F7A /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14EFB923DBE3BD002F0F7A /* DashboardViewController.swift */; };
 		DC14EFBD23DBE3BD002F0F7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC14EFBB23DBE3BD002F0F7A /* Main.storyboard */; };
 		DC14EFBF23DBE3C0002F0F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC14EFBE23DBE3C0002F0F7A /* Assets.xcassets */; };
 		DC14EFC223DBE3C0002F0F7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC14EFC023DBE3C0002F0F7A /* LaunchScreen.storyboard */; };
@@ -22,6 +22,7 @@
 		DC14EFEF23DBEEE2002F0F7A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14EFEE23DBEEE2002F0F7A /* Constants.swift */; };
 		DC14EFF223DBEFDC002F0F7A /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14EFF123DBEFDC002F0F7A /* DashboardViewModel.swift */; };
 		DC14EFF423DBF019002F0F7A /* DashboardParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14EFF323DBF019002F0F7A /* DashboardParser.swift */; };
+		DC14EFF723DBF1E3002F0F7A /* DashboardListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14EFF623DBF1E3002F0F7A /* DashboardListPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +54,7 @@
 		B9BBA6A0241485B2D2EAA118 /* Pods-Dashborad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dashborad.debug.xcconfig"; path = "Target Support Files/Pods-Dashborad/Pods-Dashborad.debug.xcconfig"; sourceTree = "<group>"; };
 		DC14EFB223DBE3BD002F0F7A /* Dashborad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dashborad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC14EFB523DBE3BD002F0F7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC14EFB923DBE3BD002F0F7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC14EFB923DBE3BD002F0F7A /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		DC14EFBC23DBE3BD002F0F7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC14EFBE23DBE3C0002F0F7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC14EFC123DBE3C0002F0F7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,6 +70,7 @@
 		DC14EFEE23DBEEE2002F0F7A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DC14EFF123DBEFDC002F0F7A /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		DC14EFF323DBF019002F0F7A /* DashboardParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardParser.swift; sourceTree = "<group>"; };
+		DC14EFF623DBF1E3002F0F7A /* DashboardListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardListPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +139,6 @@
 				DC14EFB523DBE3BD002F0F7A /* AppDelegate.swift */,
 				DC14EFE623DBEB7B002F0F7A /* Utils */,
 				DC14EFE523DBEB1D002F0F7A /* Dashboard */,
-				DC14EFB923DBE3BD002F0F7A /* ViewController.swift */,
 				DC14EFBB23DBE3BD002F0F7A /* Main.storyboard */,
 				DC14EFBE23DBE3C0002F0F7A /* Assets.xcassets */,
 				DC14EFC023DBE3C0002F0F7A /* LaunchScreen.storyboard */,
@@ -167,6 +168,8 @@
 		DC14EFE523DBEB1D002F0F7A /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				DC14EFF823DBF3C3002F0F7A /* Views */,
+				DC14EFF523DBF1D2002F0F7A /* Presenter */,
 				DC14EFF023DBEFC1002F0F7A /* ViewModel */,
 				DC14EFEA23DBEE75002F0F7A /* Network */,
 				DC14EFE723DBEBA6002F0F7A /* Models */,
@@ -213,6 +216,30 @@
 				DC14EFF123DBEFDC002F0F7A /* DashboardViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DC14EFF523DBF1D2002F0F7A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				DC14EFF623DBF1E3002F0F7A /* DashboardListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		DC14EFF823DBF3C3002F0F7A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC14EFF923DBF3CC002F0F7A /* Controller */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DC14EFF923DBF3CC002F0F7A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DC14EFB923DBE3BD002F0F7A /* DashboardViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		DE1179C6D51330AA09FBD31E /* Pods */ = {
@@ -432,8 +459,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC14EFEF23DBEEE2002F0F7A /* Constants.swift in Sources */,
-				DC14EFBA23DBE3BD002F0F7A /* ViewController.swift in Sources */,
+				DC14EFBA23DBE3BD002F0F7A /* DashboardViewController.swift in Sources */,
 				DC14EFE923DBEBC1002F0F7A /* DashboardModel.swift in Sources */,
+				DC14EFF723DBF1E3002F0F7A /* DashboardListPresenter.swift in Sources */,
 				DC14EFF223DBEFDC002F0F7A /* DashboardViewModel.swift in Sources */,
 				DC14EFEC23DBEE99002F0F7A /* Network.swift in Sources */,
 				DC14EFB623DBE3BD002F0F7A /* AppDelegate.swift in Sources */,
