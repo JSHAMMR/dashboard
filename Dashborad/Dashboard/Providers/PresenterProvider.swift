@@ -31,6 +31,8 @@ class PresenterProvider: NSObject, DashboardListPresenterDelegate {
             
             self.addPieChartView ()
             
+            self.addServicesView ()
+            
         }
     }
     
@@ -127,6 +129,29 @@ class PresenterProvider: NSObject, DashboardListPresenterDelegate {
               })
          
          
+             }
+    
+    func addServicesView () {
+                 
+               let servicesView = (ServicesView.instanceFromNib() as! ServicesView)
+               servicesView.frame =  CGRect(x: 0, y:heightContent, width:  screenSize.width, height: servicesView.frame.height)
+
+
+               scrollView.addSubview(servicesView)
+               servicesView.tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: reuseIdentifierJob)
+
+               servicesView.tableView.dataSource = self.servicesProvider
+
+               heightContent = heightContent + servicesView.frame.height
+
+               scrollView.contentSize = CGSize(width:  screenSize.width, height: heightContent)
+
+
+               self.servicesProvider.dashboardListPresenter = self.dashboardListPresenter
+               servicesView.tableView.reloadData()
+               servicesView.descLbl.text = self.dashboardListPresenter?.getServiceDescription()
+       
+
              }
     
 
