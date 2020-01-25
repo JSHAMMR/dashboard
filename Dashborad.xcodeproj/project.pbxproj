@@ -38,6 +38,7 @@
 		DC14F01B23DC1EA0002F0F7A /* PieChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC14F01A23DC1EA0002F0F7A /* PieChartView.xib */; };
 		DC14F01E23DC244A002F0F7A /* ServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14F01D23DC244A002F0F7A /* ServicesView.swift */; };
 		DC14F02023DC2458002F0F7A /* ServicesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC14F01F23DC2458002F0F7A /* ServicesView.xib */; };
+		DC14F02223DC25BF002F0F7A /* ServicesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14F02123DC25BF002F0F7A /* ServicesProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		DC14F01A23DC1EA0002F0F7A /* PieChartView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PieChartView.xib; sourceTree = "<group>"; };
 		DC14F01D23DC244A002F0F7A /* ServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesView.swift; sourceTree = "<group>"; };
 		DC14F01F23DC2458002F0F7A /* ServicesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServicesView.xib; sourceTree = "<group>"; };
+		DC14F02123DC25BF002F0F7A /* ServicesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,6 +304,7 @@
 			children = (
 				DC14F00123DBFAD9002F0F7A /* PresenterProvider.swift */,
 				DC14F00323DC0100002F0F7A /* JobsProvider.swift */,
+				DC14F02123DC25BF002F0F7A /* ServicesProvider.swift */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -633,6 +636,7 @@
 				DC14F01423DC0EA0002F0F7A /* LineChartView.swift in Sources */,
 				DC14F00823DC02E3002F0F7A /* TableViewCell.swift in Sources */,
 				DC14F00423DC0100002F0F7A /* JobsProvider.swift in Sources */,
+				DC14F02223DC25BF002F0F7A /* ServicesProvider.swift in Sources */,
 				DC14EFF423DBF019002F0F7A /* DashboardParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
