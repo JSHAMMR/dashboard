@@ -65,6 +65,10 @@ class DashboardListPresenter: NSObject {
         return description
     }
     
+    public func getJob(index:Int) -> JobItem {
+        return self.getJobs()[index]
+    }
+    
 }
 
 extension DashboardListPresenter : DashboardListModelDelegate {
