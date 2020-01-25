@@ -35,6 +35,12 @@ class DashboardListPresenter: NSObject {
         return rating
     }
 
+    public func getRatingDescription () -> String {
+        guard let description = dashboardModel.response?.data?.analytics?.rating?.ratingDescription!else {
+            return ""
+        }
+        return description
+    }
 }
 
 extension DashboardListPresenter : DashboardListModelDelegate {
