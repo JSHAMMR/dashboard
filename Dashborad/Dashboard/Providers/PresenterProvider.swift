@@ -26,6 +26,8 @@ class PresenterProvider: NSObject, DashboardListPresenterDelegate {
             
             self.addJobsView ()
             
+            self.addLineChartView ()
+            
         }
     }
     
@@ -89,6 +91,23 @@ class PresenterProvider: NSObject, DashboardListPresenterDelegate {
     
 
           }
+    
+    func addLineChartView () {
+               
+               self.dashboardListPresenter?.getLineCharts().first?.forEach({ (lineChart) in
+               let lineChartView = (LineChartView.instanceFromNib() as! LineChartView)
+               lineChartView.frame =  CGRect(x: 0, y:heightContent, width:  screenSize.width, height: lineChartView.frame.height)
+
+               scrollView.addSubview(lineChartView)
+               heightContent = heightContent + lineChartView.frame.height
+
+               scrollView.contentSize = CGSize(width:  screenSize.width, height: heightContent)
+
+               lineChartView.updateUI(lineChartItems: (lineChart.items!), desc: lineChart.lineChartDescription!)
+               })
+       
+       
+           }
     
 
 }
