@@ -25,6 +25,7 @@ class DashboardViewController: UIViewController {
     override func viewDidLoad() {
         
         self.dashboardListPresenter = self.dashboardPresenter()
+        self.dashboardListPresenter?.dashboardViewController = self
         self.dashboardListPresenter?.fetchDashboardItems()
 
         self.presnterProvider.dashboardListPresenter = self.dashboardListPresenter

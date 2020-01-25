@@ -16,7 +16,8 @@ class DashboardListPresenter: NSObject {
     weak var delegate: DashboardListPresenterDelegate?
     private let dashboardViewModel: DashboardViewModel
     private var dashboardModel: DashboardModel!
-    
+    var dashboardViewController: DashboardViewController!
+
     init(dashboardViewModel:DashboardViewModel) {
            self.dashboardViewModel = dashboardViewModel
            super.init()
@@ -122,10 +123,30 @@ extension DashboardListPresenter : DashboardListModelDelegate {
     func didFetchDashboardItems(success: Bool, dashboardItems: DashboardModel) {
         self.dashboardModel = dashboardItems
         
-        if let delegate = self.delegate {
-            delegate.didFetchDashboardItems(success: success)
-            return
+        if dashboardItems.httpStatus == 201 || dashboardItems.httpStatus == 200{
+            if let delegate = self.delegate {
+                delegate.didFetchDashboardItems(success: success)
+                return
+            }
+        } else {
+            let alert = UIAlertController(title: "APi Error", message: "Something wenr wrong", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                  switch action.style{
+                  case .default:
+                        print("default")
+
+                  case .cancel:
+                        print("cancel")
+
+                  case .destructive:
+                        print("destructive")
+
+
+            }}))
+            dashboardViewController.present(alert, animated: true, completion: nil)
         }
+        
+        
     }
     
 }
