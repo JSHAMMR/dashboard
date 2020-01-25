@@ -102,7 +102,13 @@ class DashboardListPresenter: NSObject {
            return jobs
        }
        
-    
+    public func getServiceDescription () -> String {
+           guard let description = dashboardModel.response?.data?.analytics?.service?.jobDescription!else {
+               return ""
+           }
+           return description
+       }
+       
 }
 
 extension DashboardListPresenter : DashboardListModelDelegate {
