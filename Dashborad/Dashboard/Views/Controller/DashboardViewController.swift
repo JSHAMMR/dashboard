@@ -12,6 +12,7 @@ class DashboardViewController: UIViewController {
     private var dashboardListPresenter: DashboardListPresenter?
 
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet var presnterProvider: PresenterProvider!
 
     override func viewDidLoad() {
         

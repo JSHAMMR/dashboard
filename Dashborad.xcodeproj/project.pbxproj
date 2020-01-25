@@ -23,6 +23,9 @@
 		DC14EFF223DBEFDC002F0F7A /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14EFF123DBEFDC002F0F7A /* DashboardViewModel.swift */; };
 		DC14EFF423DBF019002F0F7A /* DashboardParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14EFF323DBF019002F0F7A /* DashboardParser.swift */; };
 		DC14EFF723DBF1E3002F0F7A /* DashboardListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14EFF623DBF1E3002F0F7A /* DashboardListPresenter.swift */; };
+		DC14EFFD23DBF79A002F0F7A /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14EFFC23DBF79A002F0F7A /* RatingView.swift */; };
+		DC14EFFF23DBF7F4002F0F7A /* RatingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC14EFFE23DBF7F4002F0F7A /* RatingView.xib */; };
+		DC14F00223DBFAD9002F0F7A /* PresenterProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14F00123DBFAD9002F0F7A /* PresenterProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,9 @@
 		DC14EFF123DBEFDC002F0F7A /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		DC14EFF323DBF019002F0F7A /* DashboardParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardParser.swift; sourceTree = "<group>"; };
 		DC14EFF623DBF1E3002F0F7A /* DashboardListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardListPresenter.swift; sourceTree = "<group>"; };
+		DC14EFFC23DBF79A002F0F7A /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		DC14EFFE23DBF7F4002F0F7A /* RatingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingView.xib; sourceTree = "<group>"; };
+		DC14F00123DBFAD9002F0F7A /* PresenterProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +174,7 @@
 		DC14EFE523DBEB1D002F0F7A /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				DC14F00023DBFA8C002F0F7A /* Providers */,
 				DC14EFF823DBF3C3002F0F7A /* Views */,
 				DC14EFF523DBF1D2002F0F7A /* Presenter */,
 				DC14EFF023DBEFC1002F0F7A /* ViewModel */,
@@ -229,6 +236,7 @@
 		DC14EFF823DBF3C3002F0F7A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DC14EFFA23DBF75F002F0F7A /* XIBs */,
 				DC14EFF923DBF3CC002F0F7A /* Controller */,
 			);
 			path = Views;
@@ -240,6 +248,31 @@
 				DC14EFB923DBE3BD002F0F7A /* DashboardViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		DC14EFFA23DBF75F002F0F7A /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				DC14EFFB23DBF773002F0F7A /* Rating */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
+		DC14EFFB23DBF773002F0F7A /* Rating */ = {
+			isa = PBXGroup;
+			children = (
+				DC14EFFC23DBF79A002F0F7A /* RatingView.swift */,
+				DC14EFFE23DBF7F4002F0F7A /* RatingView.xib */,
+			);
+			name = Rating;
+			sourceTree = "<group>";
+		};
+		DC14F00023DBFA8C002F0F7A /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				DC14F00123DBFAD9002F0F7A /* PresenterProvider.swift */,
+			);
+			path = Providers;
 			sourceTree = "<group>";
 		};
 		DE1179C6D51330AA09FBD31E /* Pods */ = {
@@ -365,6 +398,7 @@
 				DC14EFC223DBE3C0002F0F7A /* LaunchScreen.storyboard in Resources */,
 				DC14EFBF23DBE3C0002F0F7A /* Assets.xcassets in Resources */,
 				DC14EFBD23DBE3BD002F0F7A /* Main.storyboard in Resources */,
+				DC14EFFF23DBF7F4002F0F7A /* RatingView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,9 +495,11 @@
 				DC14EFEF23DBEEE2002F0F7A /* Constants.swift in Sources */,
 				DC14EFBA23DBE3BD002F0F7A /* DashboardViewController.swift in Sources */,
 				DC14EFE923DBEBC1002F0F7A /* DashboardModel.swift in Sources */,
+				DC14EFFD23DBF79A002F0F7A /* RatingView.swift in Sources */,
 				DC14EFF723DBF1E3002F0F7A /* DashboardListPresenter.swift in Sources */,
 				DC14EFF223DBEFDC002F0F7A /* DashboardViewModel.swift in Sources */,
 				DC14EFEC23DBEE99002F0F7A /* Network.swift in Sources */,
+				DC14F00223DBFAD9002F0F7A /* PresenterProvider.swift in Sources */,
 				DC14EFB623DBE3BD002F0F7A /* AppDelegate.swift in Sources */,
 				DC14EFF423DBF019002F0F7A /* DashboardParser.swift in Sources */,
 			);
