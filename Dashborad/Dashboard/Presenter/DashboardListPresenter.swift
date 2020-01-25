@@ -26,6 +26,14 @@ class DashboardListPresenter: NSObject {
     public func fetchDashboardItems (scope:String = "ALL") {
         self.dashboardViewModel.fetchDashboardItems(scope: scope)
     }
+    
+    public func getRating() -> Rating {
+        
+        guard let rating = dashboardModel.response?.data?.analytics?.rating else {
+            return Rating()
+        }
+        return rating
+    }
 
 }
 
