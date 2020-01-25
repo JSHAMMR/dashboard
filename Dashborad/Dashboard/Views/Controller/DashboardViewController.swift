@@ -23,7 +23,8 @@ class DashboardViewController: UIViewController {
         self.presnterProvider.dashboardListPresenter = self.dashboardListPresenter
         self.presnterProvider.scrollView = self.scrollView
         
-        
+        self.presnterProvider.jobProvider = self.jobProvider
+
         self.dashboardListPresenter?.delegate = self.presnterProvider
 
         super.viewDidLoad()

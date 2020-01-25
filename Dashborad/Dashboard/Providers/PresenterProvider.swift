@@ -15,6 +15,9 @@ class PresenterProvider: NSObject, DashboardListPresenterDelegate {
     var scrollView: UIScrollView!
     let screenSize = UIScreen.main.bounds
     private var heightContent:CGFloat = 0
+    
+    var jobProvider:JobsProvider!
+
 
     func didFetchDashboardItems(success: Bool) {
         DispatchQueue.main.async {
