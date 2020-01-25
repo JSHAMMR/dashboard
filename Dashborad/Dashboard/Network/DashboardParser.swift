@@ -13,10 +13,8 @@ public class DashboardParser: NSObject {
 
     func parseDashboardItems(data:Data) -> DashboardModel {
         
-        
         var dashboardModel : DashboardModel?
         do {
-            
             dashboardModel = try JSONDecoder().decode(DashboardModel.self, from: data)
             
         } catch let error as NSError {
