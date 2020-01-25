@@ -108,6 +108,12 @@ class DashboardListPresenter: NSObject {
            }
            return description
        }
+    
+    
+    public func getService(index:Int) -> JobItem {
+           return self.getServices()[index]
+       }
+
        
 }
 
