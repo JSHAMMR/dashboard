@@ -7,3 +7,4 @@
 //
 
 public let DashboardApiUrL = "https://skyrim.whipmobility.io/v10/analytic/dashboard/operation/mock?scope="
+public let reuseIdentifierJob = "Cell"
