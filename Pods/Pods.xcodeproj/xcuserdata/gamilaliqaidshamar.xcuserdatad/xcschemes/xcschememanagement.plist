@@ -7,7 +7,7 @@
 		<key>AnyChartiOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>Pods-Dashborad-DashboradUITests.xcscheme</key>
 		<dict>
@@ -17,7 +17,7 @@
 		<key>Pods-Dashborad.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>Pods-DashboradTests.xcscheme</key>
 		<dict>
