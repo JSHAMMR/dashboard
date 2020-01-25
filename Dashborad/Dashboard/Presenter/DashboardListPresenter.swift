@@ -51,7 +51,12 @@ class DashboardListPresenter: NSObject {
         return count
     }
     
-    
+    public func getJobs() -> [JobItem] {
+        guard let jobs = dashboardModel.response?.data?.analytics?.job?.items!else {
+                   return []
+               }
+        return jobs
+    }
     
 }
 
