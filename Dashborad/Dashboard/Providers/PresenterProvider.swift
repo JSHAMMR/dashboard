@@ -23,6 +23,9 @@ class PresenterProvider: NSObject, DashboardListPresenterDelegate {
     func didFetchDashboardItems(success: Bool) {
         DispatchQueue.main.async {
             
+            
+            self.clearDashboard ()
+            
             self.addRatingView ()
             
             self.addJobsView ()
@@ -35,6 +38,18 @@ class PresenterProvider: NSObject, DashboardListPresenterDelegate {
             
         }
     }
+    
+    func clearDashboard () {
+            let subViews = self.scrollView.subviews
+
+            if subViews.count > 0 {
+                heightContent = 0
+            }
+            for subview in subViews{
+                subview.removeFromSuperview()
+            }
+           
+       }
     
     func addRatingView () {
               
