@@ -43,6 +43,7 @@
                     <connections>
                         <outlet property="jobProvider" destination="pyq-eN-GOe" id="Dpf-pd-jkq"/>
                         <outlet property="presnterProvider" destination="eg1-GG-7l6" id="bVf-XY-TXd"/>
+                        <outlet property="scopeLbl" destination="Nn6-qm-mA5" id="mq7-Fl-RxL"/>
                         <outlet property="scrollView" destination="9qO-MD-9DY" id="Ceb-Cx-USa"/>
                         <outlet property="servicesProvider" destination="QPr-SN-n3B" id="Emb-Tx-jLY"/>
                     </connections>
