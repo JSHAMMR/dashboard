@@ -21,7 +21,10 @@ class PresenterProvider: NSObject, DashboardListPresenterDelegate {
 
     func didFetchDashboardItems(success: Bool) {
         DispatchQueue.main.async {
+            
             self.addRatingView ()
+            
+            self.addJobsView ()
             
         }
     }
@@ -61,6 +64,30 @@ class PresenterProvider: NSObject, DashboardListPresenterDelegate {
               scrollView.contentSize = CGSize(width:  screenSize.width, height: heightContent)
       
       
+          }
+    
+    
+       func addJobsView () {
+
+               let jobsView = (JobsView.instanceFromNib() as! JobsView)
+               jobsView.frame =  CGRect(x: 0, y:heightContent, width:  screenSize.width, height: jobsView.frame.height)
+
+
+               scrollView.addSubview(jobsView)
+               jobsView.tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: reuseIdentifierJob)
+
+               jobsView.tableView.dataSource = self.jobProvider
+
+               heightContent = heightContent + jobsView.frame.height
+
+               scrollView.contentSize = CGSize(width: screenSize.width, height: heightContent)
+
+
+               self.jobProvider.dashboardListPresenter = self.dashboardListPresenter
+               jobsView.tableView.reloadData()
+               jobsView.descLbl.text = self.dashboardListPresenter?.getJobDescription()
+    
+
           }
     
 
