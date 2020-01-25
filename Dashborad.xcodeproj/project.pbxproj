@@ -31,6 +31,7 @@
 		DC14F00923DC02E3002F0F7A /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC14F00723DC02E3002F0F7A /* TableViewCell.xib */; };
 		DC14F00C23DC070E002F0F7A /* JobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14F00B23DC070E002F0F7A /* JobsView.swift */; };
 		DC14F00E23DC0716002F0F7A /* JobsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC14F00D23DC0716002F0F7A /* JobsView.xib */; };
+		DC14F01123DC0A12002F0F7A /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14F01023DC0A12002F0F7A /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		DC14F00723DC02E3002F0F7A /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		DC14F00B23DC070E002F0F7A /* JobsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsView.swift; sourceTree = "<group>"; };
 		DC14F00D23DC0716002F0F7A /* JobsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobsView.xib; sourceTree = "<group>"; };
+		DC14F01023DC0A12002F0F7A /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 		DC14EFE623DBEB7B002F0F7A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				DC14F00F23DC09AF002F0F7A /* Extenstion */,
 				DC14EFED23DBEED4002F0F7A /* Constants */,
 			);
 			path = Utils;
@@ -306,6 +309,14 @@
 			name = Jobs;
 			sourceTree = "<group>";
 		};
+		DC14F00F23DC09AF002F0F7A /* Extenstion */ = {
+			isa = PBXGroup;
+			children = (
+				DC14F01023DC0A12002F0F7A /* UIView.swift */,
+			);
+			path = Extenstion;
+			sourceTree = "<group>";
+		};
 		DE1179C6D51330AA09FBD31E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,6 +341,7 @@
 				DC14EFAE23DBE3BD002F0F7A /* Sources */,
 				DC14EFAF23DBE3BD002F0F7A /* Frameworks */,
 				DC14EFB023DBE3BD002F0F7A /* Resources */,
+				17C47BACFD320C8BE45B3D3B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -367,6 +379,7 @@
 				DC14EFCF23DBE3C0002F0F7A /* Sources */,
 				DC14EFD023DBE3C0002F0F7A /* Frameworks */,
 				DC14EFD123DBE3C0002F0F7A /* Resources */,
+				B335850B44BDA16437956299 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -474,6 +487,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		17C47BACFD320C8BE45B3D3B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dashborad/Pods-Dashborad-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dashborad/Pods-Dashborad-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dashborad/Pods-Dashborad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		19B182FFB6E9293BD1432F0E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -518,6 +548,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B335850B44BDA16437956299 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dashborad-DashboradUITests/Pods-Dashborad-DashboradUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dashborad-DashboradUITests/Pods-Dashborad-DashboradUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dashborad-DashboradUITests/Pods-Dashborad-DashboradUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -535,6 +582,7 @@
 				DC14F00223DBFAD9002F0F7A /* PresenterProvider.swift in Sources */,
 				DC14EFB623DBE3BD002F0F7A /* AppDelegate.swift in Sources */,
 				DC14F00C23DC070E002F0F7A /* JobsView.swift in Sources */,
+				DC14F01123DC0A12002F0F7A /* UIView.swift in Sources */,
 				DC14F00823DC02E3002F0F7A /* TableViewCell.swift in Sources */,
 				DC14F00423DC0100002F0F7A /* JobsProvider.swift in Sources */,
 				DC14EFF423DBF019002F0F7A /* DashboardParser.swift in Sources */,
