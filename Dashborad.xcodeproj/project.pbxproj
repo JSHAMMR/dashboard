@@ -20,6 +20,8 @@
 		DC14EFE923DBEBC1002F0F7A /* DashboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14EFE823DBEBC1002F0F7A /* DashboardModel.swift */; };
 		DC14EFEC23DBEE99002F0F7A /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14EFEB23DBEE99002F0F7A /* Network.swift */; };
 		DC14EFEF23DBEEE2002F0F7A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14EFEE23DBEEE2002F0F7A /* Constants.swift */; };
+		DC14EFF223DBEFDC002F0F7A /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14EFF123DBEFDC002F0F7A /* DashboardViewModel.swift */; };
+		DC14EFF423DBF019002F0F7A /* DashboardParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14EFF323DBF019002F0F7A /* DashboardParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		DC14EFE823DBEBC1002F0F7A /* DashboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardModel.swift; sourceTree = "<group>"; };
 		DC14EFEB23DBEE99002F0F7A /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		DC14EFEE23DBEEE2002F0F7A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DC14EFF123DBEFDC002F0F7A /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		DC14EFF323DBF019002F0F7A /* DashboardParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +167,7 @@
 		DC14EFE523DBEB1D002F0F7A /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				DC14EFF023DBEFC1002F0F7A /* ViewModel */,
 				DC14EFEA23DBEE75002F0F7A /* Network */,
 				DC14EFE723DBEBA6002F0F7A /* Models */,
 			);
@@ -189,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				DC14EFEB23DBEE99002F0F7A /* Network.swift */,
+				DC14EFF323DBF019002F0F7A /* DashboardParser.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -199,6 +205,14 @@
 				DC14EFEE23DBEEE2002F0F7A /* Constants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		DC14EFF023DBEFC1002F0F7A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DC14EFF123DBEFDC002F0F7A /* DashboardViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		DE1179C6D51330AA09FBD31E /* Pods */ = {
@@ -420,8 +434,10 @@
 				DC14EFEF23DBEEE2002F0F7A /* Constants.swift in Sources */,
 				DC14EFBA23DBE3BD002F0F7A /* ViewController.swift in Sources */,
 				DC14EFE923DBEBC1002F0F7A /* DashboardModel.swift in Sources */,
+				DC14EFF223DBEFDC002F0F7A /* DashboardViewModel.swift in Sources */,
 				DC14EFEC23DBEE99002F0F7A /* Network.swift in Sources */,
 				DC14EFB623DBE3BD002F0F7A /* AppDelegate.swift in Sources */,
+				DC14EFF423DBF019002F0F7A /* DashboardParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
