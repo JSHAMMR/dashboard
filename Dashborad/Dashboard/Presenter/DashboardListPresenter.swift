@@ -78,6 +78,15 @@ class DashboardListPresenter: NSObject {
          return lineCharts
      }
     
+    public func getPieCharts () -> [PieChart]{
+           guard let pieCharts = dashboardModel.response?.data?.analytics?.pieCharts else {
+                     return [PieChart]()
+               }
+                  
+           return pieCharts
+       }
+       
+    
 }
 
 extension DashboardListPresenter : DashboardListModelDelegate {
