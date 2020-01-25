@@ -17,6 +17,7 @@
 		DC14EFC223DBE3C0002F0F7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC14EFC023DBE3C0002F0F7A /* LaunchScreen.storyboard */; };
 		DC14EFCD23DBE3C0002F0F7A /* DashboradTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14EFCC23DBE3C0002F0F7A /* DashboradTests.swift */; };
 		DC14EFD823DBE3C0002F0F7A /* DashboradUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14EFD723DBE3C0002F0F7A /* DashboradUITests.swift */; };
+		DC14EFE923DBEBC1002F0F7A /* DashboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14EFE823DBEBC1002F0F7A /* DashboardModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		DC14EFD323DBE3C0002F0F7A /* DashboradUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DashboradUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC14EFD723DBE3C0002F0F7A /* DashboradUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboradUITests.swift; sourceTree = "<group>"; };
 		DC14EFD923DBE3C0002F0F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC14EFE823DBEBC1002F0F7A /* DashboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,8 @@
 		DC14EFB423DBE3BD002F0F7A /* Dashborad */ = {
 			isa = PBXGroup;
 			children = (
+				DC14EFE623DBEB7B002F0F7A /* Utils */,
+				DC14EFE523DBEB1D002F0F7A /* Dashboard */,
 				DC14EFB523DBE3BD002F0F7A /* AppDelegate.swift */,
 				DC14EFB923DBE3BD002F0F7A /* ViewController.swift */,
 				DC14EFBB23DBE3BD002F0F7A /* Main.storyboard */,
@@ -152,6 +156,29 @@
 			path = DashboradUITests;
 			sourceTree = "<group>";
 		};
+		DC14EFE523DBEB1D002F0F7A /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				DC14EFE723DBEBA6002F0F7A /* Models */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		DC14EFE623DBEB7B002F0F7A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DC14EFE723DBEBA6002F0F7A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DC14EFE823DBEBC1002F0F7A /* DashboardModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		DE1179C6D51330AA09FBD31E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,7 +189,6 @@
 				6D5AFF2EC794FB7432328775 /* Pods-DashboradTests.debug.xcconfig */,
 				98662591EBC219092EE2566C /* Pods-DashboradTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -370,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC14EFBA23DBE3BD002F0F7A /* ViewController.swift in Sources */,
+				DC14EFE923DBEBC1002F0F7A /* DashboardModel.swift in Sources */,
 				DC14EFB623DBE3BD002F0F7A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
